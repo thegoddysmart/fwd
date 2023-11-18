@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Encrypt and Decrypt</title>
+    <link rel="stylesheet" href="./caesar-cypher/css/style.css">
+  </head>
+  <body>
+
+    <main>
+      <div class="big-wrapper">
+        <header>
+          <div class="container">
+            <div class="logo">
+              <h3>Project Encrypt and Decrypt</h3>
+            </div>
+          </div>
+        </header>
+
+        <div class="main-section">
+          <div class="container">
+            <div class="title">
+              <h2>Caesar Cipher Encryption</h2>
+            </div>
+            <p class="prompt">
+              Enter a message and an offset to encrypt or decrypt your message.
+            </p>
+            <div class="input-container">
+              <label for="message">Enter Message:</label>
+              <input type="text" id="message" placeholder="Message.......">
+            </div>
+            <div class="input-container">
+              <label for="offset">Enter Offset:</label>
+              <input type="number" id="offset" placeholder="Offset.......">
+          </div>
+
+          <button class="btn" id="encrypt-btn">Encrypt</button>
+          <button class="btn" id="decrypt-btn">Decrypt</button>
+
+          <div class="result" id="result">
+            <h2 class="title">Output Message:</h2>
+            <p id="crypted-message"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div id="welcome">Hello World</div> -->
+    <script type="module" src="./caesar-cypher/main.js"></script>
+  </body>
+</html>
